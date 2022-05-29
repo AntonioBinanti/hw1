@@ -1,0 +1,190 @@
+body {
+    margin: 0px;
+    background-color: black;
+    font-family: 'Libre Baskerville', serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 130, 152);
+    height: 60px;
+    box-shadow: inset 0px -3px 10px rgb(10, 14, 26),
+                inset 0px 3px 10px rgb(10, 14, 26);
+}
+
+nav div{
+    background-color: rgb(0, 245, 255);
+    border: 1px solid rgb(2, 2, 249);
+    border-radius: 5px;
+    padding: 4px;
+    color: rgba(2, 2, 249, 0.8);
+    font-size: 1.5rem;
+    box-shadow: inset 0px -0px 6px rgb(2, 2, 249),
+                inset 0px 0px 6px rgb(2, 2, 249);
+}
+
+nav div:hover{
+    background-color: rgba(11, 17, 29,0.2);
+    color: white;
+    border: 1px solid white;
+    box-shadow: inset 0px -0px 6px white,
+                inset 0px 0px 6px white;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 4px;
+    color: rgba(2, 2, 249, 0.8);
+    font-size: 1.5rem;
+}
+
+nav a:hover{
+    color: white;
+}
+
+nav div span{
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+}
+
+span{
+    color: red;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#auto{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    box-shadow: 0px 0px 20px rgb(0, 245, 255), 
+                0px 0px 20px rgb(0, 245, 255);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    position: relative;
+}
+
+#auto img{
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 10px;
+    border: 10px;
+}
+
+#auto h2{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#salva{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: 0px;
+}
+
+#salva img{
+    width: 90px;
+}
+
+#salva img:hover{
+    background-color: rgba(0, 245, 255, 0.6);
+}
+
+#scheda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+#dati{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    flex-direction: column;
+    height: 250px;
+    width: 90%;
+    box-shadow: 0px 0px 20px rgb(0 245 255),
+                0px 0px 20px rgb(0 245 255);
+}
+
+#dati p{
+    color: white;
+    padding: 10px;
+    border: 1px solid rgb(0 245 255);
+    margin: 0px;
+}
+
+#legenda{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    align-items: center;
+    background-color: black;
+    box-shadow: 0px 0px 20px rgb(0, 245, 255), 
+                0px 0px 20px rgb(0, 245, 255);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+#legenda img{
+    border-radius: 10px;
+}
+
+h1{
+    color: red;
+}
+
+#legenda p{
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 130, 152);
+    height: 60px;
+    box-shadow: inset 0px -3px 10px rgb(10, 14, 26),
+                inset 0px 3px 10px rgb(10, 14, 26);
+    margin-top: 100px;
+}
+
+footer h2{
+    font-size: 1rem;
+    color: white;
+}
+
+@media (max-width: 900px){
+    img{
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 700px){
+    nav div, nav a{
+        font-size: 0.8em;
+    }
+
+    #auto img{
+        max-width: 250px;
+    }
+}
